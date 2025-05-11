@@ -26,6 +26,7 @@ def getVersionName = {
 	}
 	return stdout.toString().trim()
 }
+
 version = getVersionName()
 group = 'com.github.mike-strauch'
 
@@ -40,4 +41,12 @@ dependencies {
 	implementation group: 'org.jsoup', name: 'jsoup', version: '1.15.1'
 	testImplementation 'junit:junit:4.13.2'
 	testImplementation 'commons-io:commons-io:2.11.0'
+}
+
+publishing {
+	publications {
+		maven(MavenPublication) {
+			from components.java
+		}
+	}
 }
