@@ -25,7 +25,7 @@ def getVersionName = {
 	return stdout.toString().trim()
 }
 version = getVersionName()
-group = 'com.github.dgautier'
+group = 'com.github.mike-strauch'
 
 repositories {
 	mavenCentral()
