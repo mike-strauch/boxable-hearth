@@ -2,8 +2,13 @@ package be.quodlibet.boxable;
 
 import be.quodlibet.boxable.datatable.DataTable;
 import be.quodlibet.boxable.datatable.UpdateCellProperty;
-import com.google.common.io.Files;
-import java.awt.Color;
+import org.apache.commons.io.IOUtils;
+import org.apache.pdfbox.pdmodel.PDDocument;
+import org.apache.pdfbox.pdmodel.PDPage;
+import org.apache.pdfbox.pdmodel.common.PDRectangle;
+import org.junit.*;
+
+import java.awt.*;
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
@@ -12,16 +17,6 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Iterator;
 import java.util.List;
-
-import org.apache.commons.io.IOUtils;
-import org.apache.pdfbox.pdmodel.PDDocument;
-import org.apache.pdfbox.pdmodel.PDPage;
-import org.apache.pdfbox.pdmodel.common.PDRectangle;
-import org.junit.After;
-import org.junit.AfterClass;
-import org.junit.Before;
-import org.junit.BeforeClass;
-import org.junit.Test;
 
 /**
  *
