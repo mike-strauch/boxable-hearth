@@ -11,6 +11,8 @@ repositories {
 	mavenCentral()
 }
 
+rootProject.name = 'boxable-hearth'
+
 
 /*
  * Gets the version name from the latest Git tag
