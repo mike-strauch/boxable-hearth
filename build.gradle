@@ -3,6 +3,7 @@ wrapper {
 }
 
 apply plugin: 'java'
+apply plugin: 'maven-publish'
 
 sourceCompatibility = 17
 
